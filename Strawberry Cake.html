@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BREAD HEAVEN - 딸기 케이크</title>
+    <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        .card-img-top {
+            transition: transform 0.3s ease;
+            width: 100%; /* 너비 조절 */
+            height: 300px; /* 높이 조절 */
+            object-fit: cover; /* 이미지를 영역에 맞게 자르고 크기 조절 */
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.2);
+        }
+
+        .hero {
+            background-color: #C6E9EB;
+            color: black;
+            padding-top: 3rem; /* 위쪽 여백 조절 */
+            padding-bottom: 3rem; /* 아래쪽 여백 조절 */
+            margin-bottom: 2rem; /* hero와 다음 요소 사이의 공백 조절 */
+        }
+
+        .nav-link {
+            font-size: 1.25rem; /* 메뉴 글자 크기 조절 */
+        }
+
+        .navbar {
+            background-color: #FFF1CD; /* 메뉴바 색상 변경 */
+        }
+
+        .navbar-nav {
+            margin-left: 20px; /* 왼쪽에서 오른쪽으로 거리 조절 */
+        }
+
+        .logo img {
+            width: 300px; /* 로고 너비 조절 */
+            height: auto; /* 비율을 유지하며 높이 자동 조절 */
+        }
+
+        .product-image {
+            width: 100%; /* 상품 이미지의 너비를 100%로 설정 */
+            height: auto; /* 비율을 유지하면서 높이를 자동 조절 */
+            max-height: 500px; /* 최대 높이 설정 */
+            object-fit: cover; /* 이미지가 영역에 맞게 자르고 크기 조절 */
+        }
+
+        .btn-container {
+            margin-top: 5rem; /* 버튼과 설명 사이의 여백을 설정 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero text-center py-5">
+        <div class="logo mb-4">
+            <a href="index.html">
+                <img src="logo3.jpg.png" alt="로고" class="img-fluid">
+            </a>
+        </div>        
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Recommend</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="bread.html">Bread</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cookie.html">Cookie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cake.html">Cake</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="drink.html">Drink</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">로그인</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="11.html">회원가입</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">장바구니</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="D:\인공지능탐구반_20308_나은별\사진\3.jpg" class="product-image" alt="딸기 케이크">
+            </div>
+            <div class="col-md-6">
+                <h2>딸기 케이크</h2>
+                <h4 class="text-muted">200,000원</h4>
+                <p>신선한 딸기가 듬뿍 들어간 맛있는 딸기 케이크입니다.</p>
+                <div class="btn-container">
+                    <button class="btn btn-primary btn-lg">장바구니 담기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

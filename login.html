@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BREAD HEAVEN</title>
+    <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        /* 꾸미기 */
+        .card-img-top {
+            transition: transform 0.3s ease;
+            width: 100%; /* 너비 조절 */
+            height: 300px; /* 높이 조절 */
+            object-fit: cover; /* 이미지를 영역에 맞게 자르고 크기 조절 */
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.2);
+        }
+
+        .hero {
+            background-color: #C6E9EB;
+            color: black;
+            padding-top: 3rem; /* 위쪽 여백 조절 */
+            padding-bottom: 3rem; /* 아래쪽 여백 조절 */
+            margin-bottom: 2rem; /* hero와 다음 요소 사이의 공백 조절 */
+        }
+
+        .nav-link {
+            font-size: 1.25rem; /* 메뉴 글자 크기 조절 */
+        }
+
+        .navbar {
+            background-color: #FFF1CD; /* 메뉴바 색상 변경 */
+        }
+
+        .navbar-nav {
+            margin-left: 20px; /* 왼쪽에서 오른쪽으로 거리 조절 */
+        }
+
+        /* 로고 크기 조절 */
+        .logo img {
+            width: 300px; /* 로고 너비 조절 */
+            height: auto; /* 비율을 유지하며 높이 자동 조절 */
+        }
+
+        /* 로그인 폼 중앙 배치 */
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #f8f9fa;
+        }
+
+        /* 추가된 스타일 */
+        .login-form h2 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+
+        .login-form .form-label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .login-form .form-control {
+            border-radius: 10px;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .login-form .form-control:focus {
+            border-color: #FFF1CD;
+            box-shadow: 0 0 5px rgba(255, 140, 0, 0.3);
+        }
+
+        .login-form .btn-primary {
+            background-color: #FFF1CD;
+            border-color: #f3e1af;
+            border-radius: 10px;
+            padding: 0.75rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .login-form .btn-primary:hover {
+            background-color: #ffeb99;
+            border-color: #ffeb99;
+            transform: scale(1.05);
+        }
+
+        .login-form .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .login-form .forgot-password:hover {
+            color: #FFF1CD;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero text-center py-5">
+        <!-- 로고를 넣을 공간 -->
+        <div class="logo mb-4">
+            <a href="index.html">
+                <img src="logo3.jpg.png" alt="로고" class="img-fluid">
+            </a>
+        </div>
+        <!-- 메뉴바를 추가 -->
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Recommend</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="bread.html">Bread</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cookie.html">Cookie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cake.html">Cake</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="drink.html">Drink</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="login.html">로그인</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="11.html">회원가입</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">장바구니</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="login-form">
+            <h2 class="text-center">로그인</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">이메일 주소</label>
+                    <input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">비밀번호</label>
+                    <input type="password" class="form-control" id="password" placeholder="비밀번호를 입력하세요" required>
+                </div>
+                <button type="submit" class="btn btn-primary">로그인</button>
+                <a href="#" class="forgot-password">비밀번호를 잊으셨나요?</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

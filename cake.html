@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BREAD HEAVEN</title>
+    <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        /* 꾸미기 */
+        .card-img-top {
+            transition: transform 0.3s ease;
+            width: 400px; /* 너비 조절 */
+            height: 400px; /* 높이 조절 */
+            object-fit: cover; /* 이미지를 영역에 맞게 자르고 크기 조절 */
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.2);
+        }
+
+        .hero {
+            background-color: #C6E9EB;
+            color: black;
+            padding-top: 3rem; /* 위쪽 여백 조절 */
+            padding-bottom: 3rem; /* 아래쪽 여백 조절 */
+            margin-bottom: 2rem; /* hero와 다음 요소 사이의 공백 조절 */
+        }
+
+        .nav-link {
+            font-size: 1.25rem; /* 메뉴 글자 크기 조절 */
+        }
+
+        .navbar {
+            background-color: #FFF1CD; /* 메뉴바 색상 변경 */
+        }
+
+        .navbar-nav {
+            margin-left: 20px; /* 왼쪽에서 오른쪽으로 거리 조절 */
+        }
+
+        /* 추가한 스타일 */
+        .custom-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* 로고 크기 조절 */
+        .logo img {
+            width: 300px; /* 로고 너비 조절 */
+            height: auto; /* 비율을 유지하며 높이 자동 조절 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero text-center py-5">
+        <!-- 로고를 넣을 공간 -->
+        <div class="logo mb-4">
+            <a href="index.html">
+                <img src="logo3.jpg.png" alt="로고" class="img-fluid">
+            </a>
+        </div>        
+        <!-- 메뉴바를 추가 -->
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Recommend</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="bread.html">Bread</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cookie.html">Cookie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="cake.html">Cake</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="drink.html">Drink</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">로그인</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="11.html">회원가입</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">장바구니</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 추가된 부분 -->
+    <div class="container">
+        <h1 class="custom-title">Cake</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="Basque Cheesecake.html">
+                        <img src="D:\인공지능탐구반_20308_나은별\사진\1.jpg" class="card-img-top" alt="바스크 치즈 케이크">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">바스크 치즈 케이크</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                        <p class="card-text">한 번 밖에 안쓴 냄비 팝니다. 부모님이 독립할 때 주신 거에요!</p>
+                        <a href="https://www.coupang.com" target="_blank" class="btn btn-primary">구매하기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 추가된 카드 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="cup cake.html">
+                        <img src="D:\인공지능탐구반_20308_나은별\사진\7.jpg" class="card-img-top" alt="컵 케이크">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">컵 케이크</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">30만원</h6>
+                        <p class="card-text">삼성 제품이고 거의 사용하지 않은 상태입니다. 가격은 조금 할인 가능해요.</p>
+                        <a href="https://www.coupang.com" target="_blank" class="btn btn-primary">구매하기</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- 추가된 카드 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="Strawberry Cake.html">
+                        <img src="D:\인공지능탐구반_20308_나은별\사진\3.jpg" class="card-img-top" alt="딸기 케이크">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">딸기 케이크</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">20만원</h6>
+                        <p class="card-text">한 번도 사용한 적 없는 상태입니다. 판매합니다.</p>
+                        <a href="https://www.coupang.com" target="_blank" class="btn btn-primary">구매하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
